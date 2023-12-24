@@ -1,4 +1,5 @@
 for /F "delims=" %%i in (ussd_codes.txt) do (
+    
 
     rem Check for and clear OK dialog
     adb shell service call power 17 | findstr /C:"---)"
